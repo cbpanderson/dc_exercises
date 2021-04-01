@@ -19,10 +19,19 @@ function tipAmount(billAmt, levelOfService) {
 
 tipAmount(100, 'poor');
 
-function totalAmount(billAmt, levelOfService) {;
+function totalAmount(billAmt, levelOfService) {
     var tipAmt = tipAmount(billAmt, levelOfService);
     var totalAmount = billAmt + tipAmt;
     return totalAmount;
 }
 
 totalAmount(100, 'fair');
+
+function printNumbers(startNum, endNum) {
+    var i;
+    for(i=startNum; i<=endNum; i++) {
+        console.log(i);
+    }
+}
+
+printNumbers(1, 10);
