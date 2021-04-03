@@ -41,7 +41,6 @@ function printNumbersWhile(startNum, endNum) {
 }
 printNumbersWhile(1, 10);
 
-
 function printSquare(squareSz){
     var length = squareSz;
     for(count=0; count<length; count++){
@@ -57,15 +56,13 @@ function printSquare(squareSz){
 }
 printSquare(5);
 
-//not working yet
 function printBox(w,h){
     boxWidth(w);
-    boxHeight(h, w);
+    boxHeight(w, h);
     boxWidth(w);
 }
 printBox(6,4);
 
-//working
 function boxWidth(w){
     var i = 0;
     var line = "";
@@ -76,13 +73,22 @@ function boxWidth(w){
     console.log(line);
     line = "";
 }
-//not working
-function boxHeight(h, w){
-    var height = h-2;
-    var blank = w-2;
-    console.log('* '+);
+boxWidth(4);
 
+function boxHeight(w, h){
+    var height = h-2;
+    var width = w-2;
+    var line = "*";
+    for (i=0;i<height;i++){
+        for (j=0;j<width;j++){
+            line = line + " ";
+        }
+        line = line + "*";
+        console.log(line);
+        line = "*";
+    }
 }
+boxHeight(6, 4);
 
 function printBanner(text){
     bannerLength = text.length + 4;
