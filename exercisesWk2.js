@@ -1,3 +1,4 @@
+//Javascript Exercises*********
 function madLib(name, subject){
     return name+"'s favorite subject in school is "+subject+".";
 }
@@ -97,3 +98,60 @@ function printBanner(text){
     boxWidth(bannerLength);
 }
 printBanner("hello");
+
+//not working yet
+function leetspeak(word){
+    var leetConvert = {"A":4, "E":3, "G":6, "I":1, "O":0, "S":5, "T":7};
+    for (i=0;i<=word.length;i++){
+        //leetconvert.find(element => element == word[i]);
+        word[i] == leetConvert key
+    }
+}
+leetspeak("street");
+
+function longLongVowels(word){
+    var i=0;
+    var firstLetter = "";
+    var secondLetter = "";
+
+    firstLetter = word[i];
+    finalWord = firstLetter;
+    i++;
+    while(i<word.length){
+        secondLetter = word[i];
+        if(secondLetter === firstLetter){
+            finalWord = finalWord + firstLetter + firstLetter + firstLetter + firstLetter;
+        } else{
+            finalWord = finalWord + secondLetter; 
+        }
+        firstLetter = secondLetter;
+        i++;
+    }
+    console.log(finalWord);
+}
+longLongVowels("cookie");
+longLongVowels("igloo");
+
+//not working yet
+function positiveNumbers(numArray){
+    var posNumArray = numArray.filter(numArray > 0);
+    console.log(posNumArray);
+}
+positiveNumbers([1, 6, -7, 20, -33]);
+
+//Function Exercises**********
+//not working yet
+function evenNumbers(numArray){
+    var evenNumArray = numArray.filter(numArray % 2);
+    console.log(evenNumArray);
+}
+evenNumbers([1,2,3,4,5,6]);
+
+//not working yet
+function squareTheNumbers(numArray){
+    numArray.foreach(myFunction)
+}
+function myFunction(item){
+    var squaredArray = [item*item];
+}
+squareTheNumbers();
