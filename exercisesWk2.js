@@ -155,3 +155,66 @@ function myFunction(item){
     var squaredArray = [item*item];
 }
 squareTheNumbers();
+
+//not working yet
+function cities(cityStats){
+    var warmCities = "";
+    if(Object.values(cityStats) > 70.0){
+         
+    }
+    console.log(warmCities);
+}
+cities();
+
+//not working yet --------------------
+function goodJob(names){
+    names.foreach(myFunction);
+}
+
+function myFunction(item){
+    console.log('Good job, ${item}')
+}
+
+function sortAnArray(){
+
+}
+sortAnArray();
+
+function sortAnArray2(){
+
+}
+sortAnArray2();
+
+function call3Times(fun){
+    fun(fun);
+    fun(fun);
+    fun(fun);
+}
+function fun(fun){
+    console.log(fun);
+}
+call3Times("Hello, world!");
+
+//can use loops
+function callNTimes(times, fun()){
+
+}
+callNTimes();
+
+function sumAnArray(numArray){
+    numArray.reduce
+}
+sumAnArray(numArray);
+
+function acronym(wordArray){
+
+}
+
+//Closure Exercises ************
+function counter(){
+
+}
+
+function counter2(){
+    
+}
