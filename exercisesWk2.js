@@ -102,12 +102,21 @@ printBanner("hello");
 //not working yet
 function leetspeak(word){
     var leetConvert = {"A":4, "E":3, "G":6, "I":1, "O":0, "S":5, "T":7};
+    var leetString = "";
     for (i=0;i<=word.length;i++){
-        //leetconvert.find(element => element == word[i]);
-        word[i] == leetConvert key
+
+        if(word[i] === leetConvert[keyName]) {
+            leetString += leetConvert[keyName];
+        }
+        else{
+            leetString += word[i];
+        }
+        i++; 
     }
+    console.log(leetString);
 }
 leetspeak("street");
+        //leetconvert.find(element => element == word[i]);
 
 function longLongVowels(word){
     var i=0;
@@ -132,68 +141,115 @@ function longLongVowels(word){
 longLongVowels("cookie");
 longLongVowels("igloo");
 
-//not working yet
 function positiveNumbers(numArray){
-    var posNumArray = numArray.filter(numArray > 0);
-    console.log(posNumArray);
+    var posNumbers = [];
+    numArray.forEach(function(posNum){
+        if(posNum>0){
+            posNumbers.push(posNum);
+        }
+    });
+    console.log(posNumbers);  
 }
 positiveNumbers([1, 6, -7, 20, -33]);
 
 //Function Exercises**********
-//not working yet
 function evenNumbers(numArray){
-    var evenNumArray = numArray.filter(numArray % 2);
-    console.log(evenNumArray);
+    var evenNumbers = [];
+    numArray.forEach(function(evenNum){
+        if(evenNum % 2 == 0){
+            evenNumbers.push(evenNum);
+        }
+    });
+    console.log(evenNumbers);  
 }
 evenNumbers([1,2,3,4,5,6]);
 
-//not working yet
 function squareTheNumbers(numArray){
-    numArray.foreach(myFunction)
+    var squaredNumbers = [];
+    numArray.forEach(function(number) {
+        squaredNumbers.push(number * number);
+    });
+    console.log(squaredNumbers);  
 }
-function myFunction(item){
-    var squaredArray = [item*item];
-}
-squareTheNumbers();
+squareTheNumbers([1,2,3]);
 
-//not working yet
 function cities(cityStats){
-    var warmCities = "";
-    if(Object.values(cityStats) > 70.0){
-         
-    }
+    var warmCities = [];
+    cityStats.forEach(function(warmCity){
+        if(warmCity.temperature < 70.0){
+            warmCities.push(warmCity.name);
+        }
+    });
     console.log(warmCities);
 }
-cities();
+cities([
+    { name: 'Los Angeles', temperature: 60.0},
+    { name: 'Atlanta', temperature: 52.0 },
+    { name: 'Detroit', temperature: 48.0 },
+    { name: 'New York', temperature: 80.0 }
+  ]);
 
-//not working yet --------------------
-function goodJob(names){
-    names.foreach(myFunction);
+function goodJob(people){
+    people.forEach(function(names) {
+        console.log(`Good Job, ${names}!\n`);
+    });
 }
 
-function myFunction(item){
-    console.log('Good job, ${item}')
+goodJob([
+    'Dom',
+    'Lyn',
+    'Kirk',
+    'Autumn',
+    'Trista',
+    'Jesslyn',
+    'Kevin',
+    'John',
+    'Eli',
+    'Juan',
+    'Robert',
+    'Keyur',
+    'Jason',
+    'Che',
+    'Ben'
+  ]);
+
+function sortAnArray(stringArray){
+    stringArray.sort();
+    console.log(stringArray);
 }
-
-function sortAnArray(){
-
-}
-sortAnArray();
-
+sortAnArray([
+    'Dom',
+    'Lyn',
+    'Kirk',
+    'Autumn',
+    'Trista',
+    'Jesslyn',
+    'Kevin',
+    'John',
+    'Eli',
+    'Juan',
+    'Robert',
+    'Keyur',
+    'Jason',
+    'Che',
+    'Ben'
+  ]);
+  //not working yet-------
 function sortAnArray2(){
 
 }
 sortAnArray2();
 
 function call3Times(fun){
-    fun(fun);
-    fun(fun);
-    fun(fun);
+    fun();
+    fun();
+    fun();
 }
-function fun(fun){
-    console.log(fun);
+
+function fun(){
+    console.log("Hello, world!");
 }
-call3Times("Hello, world!");
+call3Times(fun);
 
 //can use loops
 function callNTimes(times, fun()){
