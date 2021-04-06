@@ -234,11 +234,28 @@ sortAnArray([
     'Che',
     'Ben'
   ]);
-  //not working yet-------
-function sortAnArray2(){
 
+function sortAnArray2(stringArray){
+    stringArray.sort((a,b) => a.length - b.length);
+    console.log(stringArray);
 }
-sortAnArray2();
+sortAnArray2([
+    'Dom',
+    'Lyn',
+    'Kirk',
+    'Autumn',
+    'Trista',
+    'Jesslyn',
+    'Kevin',
+    'John',
+    'Eli',
+    'Juan',
+    'Robert',
+    'Keyur',
+    'Jason',
+    'Che',
+    'Ben'
+  ]);
 
 function call3Times(fun){
     fun();
@@ -251,11 +268,16 @@ function fun(){
 }
 call3Times(fun);
 
-//can use loops
-function callNTimes(times, fun()){
-
+function callNTimes(times, fun){
+    for(i=0; i<times; i++){
+        fun();
+    }
 }
-callNTimes();
+function fun(){
+    console.log("Hello, world!");
+}
+
+callNTimes(7, fun);
 
 function sumAnArray(numArray){
     numArray.reduce
