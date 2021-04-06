@@ -116,7 +116,6 @@ function leetspeak(word){
     console.log(leetString);
 }
 leetspeak("street");
-        //leetconvert.find(element => element == word[i]);
 
 function longLongVowels(word){
     var i=0;
@@ -279,17 +278,42 @@ function fun(){
 
 callNTimes(7, fun);
 
-function sumAnArray(numArray){
-    numArray.reduce
+function sum(numArray){
+    var finalSum = numArray.reduce(function (accumulator, currentValue) {
+        return accumulator + currentValue;
+      })
+    console.log(finalSum);
 }
-sumAnArray(numArray);
+sum([1, 2, 3]);
 
 function acronym(wordArray){
-
+        finalAcronym = wordArray.reduce((accumulator, wordArray) => accumulator + wordArray[0], '')
+    console.log(finalAcronym);
 }
+acronym(['very', 'important', 'person']);
+acronym(['national', 'aeronautics', 'space', 'administration']);
 
 //Closure Exercises ************
 function counter(){
+    return keepsCount;
+}
+keepsCount(){
+    var count += count;
+}
+var count1 = counter();
+count1();
+
+function counter(){
+    var counter = (function() {
+        var privateCounter = 0;
+        function changeBy(val) {
+          privateCounter += val;
+        }
+      
+        return {
+          increment: function() {
+            changeBy(1);
+          },
 
 }
 
