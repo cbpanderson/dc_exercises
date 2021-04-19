@@ -1,0 +1,168 @@
+div{
+    border-style: solid;
+    height: 50px;
+    width: 50px;
+}
+
+.yellow{
+    background-color: yellow;
+}
+.red{
+    background-color: red;
+}
+.black{
+    background-color: black;
+}
+.blue{
+    background-color: blue;
+}
+body{
+    height: 100vh;
+    display: flex;
+}
+
+.mainContainer{
+    display: flex;
+    height: 500px;
+    width: 1200px;
+}
+
+.column{
+    display: flex;
+    height: 500px;
+    flex-direction: column;
+}
+
+.col1{    
+    width: 17%;
+}
+
+.col2{
+    width: 17%;
+}
+
+.col3{
+    width: 26%;
+}
+
+.col4{
+    width: 26%;
+}
+
+.col5{
+    width: 17%;
+}
+
+.box1Col1{
+    width: 100%;
+    height: 46%;
+    display: flex;
+}
+.box2Col1{
+    width: 100%;
+    height: 53%;
+}
+.box1Col1Child{
+    flex-grow: 1;
+    height: 100%;
+}
+
+.box2Col1Inner{
+    width: 97%;
+    height: 32%;
+}
+
+.col2Inner{
+    width: 98%;
+    height: 24%;
+    display: flex;
+}
+
+.col2InnerBW{
+    height: 99%;
+    width: 48%;
+}
+
+.Col3Inner{
+    width: 99%;
+    display: flex;
+}
+
+.Col3Inner1{
+    height: 16%;
+}
+
+.Col3Inner2{
+    height: 16%;
+}
+
+.Col3Inner3{
+    height: 16%;
+}
+
+.Col3Inner4{
+    height: 16%;
+}
+
+.Col3Inner5{
+    height: 28%;
+}
+
+.Col3Inner6{
+    height: 28%;
+}
+
+.Col3InnerSmallWhite{
+    width: 49%;
+    height: 99%;
+}
+
+.col4Inner{
+    width: 99%;
+    display: flex;
+}
+
+.col4Inner1{
+    height: 16%;
+}
+
+.col4Inner2{
+    height: 25%;
+}
+
+.col4Inner3{
+    height: 16%;
+}
+
+.col4Inner4{
+    height: 16%;
+}
+
+.col4Inner5{
+    height: 25%;
+}
+
+.col4Inner6{
+    height: 16%;
+}
+
+.col4InnerSmallWhite{
+    width: 49%;
+    height: 99%;
+}
+
+.col4InnerBW{
+    width: 49%;
+    height: 99%;
+}
+
+.col5Inner{
+    width: 99%;
+    height: 20%;
+    display: flex;
+}
+
+.col5InnerYB{
+    width: 49%;
+    height: 99%;
+}
