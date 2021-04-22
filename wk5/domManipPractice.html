@@ -13,5 +13,14 @@
 
     var addClass = document.getElementById("burger");
     addClass.classList.add("list-item");
+
+    var newListItem = document.createElement('li');
+    var listRoot = document.getElementById("list");
+    listRoot.append(newListItem);
+    
+    newListItem.classList.add("list-item");
+    newListItem.classList.add("bacon");
+    newListItem.innerText = "Bacon";
+
   </script>
 </body>
