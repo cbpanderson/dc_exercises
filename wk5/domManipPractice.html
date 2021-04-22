@@ -1,0 +1,17 @@
+<body>
+  <h1 id="heading"></h1>
+  <ul id="list">
+    <li id="lettuce" class="green list-item">Lettuce</li>
+    <li id="tomato" class="red list-item">Tomato</li>
+    <li id="cheese" class="yellow list-item">Cheese</li>
+    <li id="burger">Burger</li>
+  </ul>
+
+  <script>  
+    var heading = document.querySelector("h1");
+    heading.innerText = "Toppings";
+
+    var addClass = document.getElementById("burger");
+    addClass.classList.add("list-item");
+  </script>
+</body>
